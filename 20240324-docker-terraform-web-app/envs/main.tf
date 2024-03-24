@@ -57,6 +57,7 @@ module "web_app_ec2" {
   subnet_id            = module.vpc.public_subnet_ids[0]
   security_group_ids   = [module.web_app_sg.security_group_id]
   ami_id               = var.web_app_configs.ami_id
+  ssh_public_key       = var.web_app_configs.ssh_public_key
   ecr_url              = module.registry.repository_url
   ecr_region           = var.vpc_configs.region
   ecr_docker_image_uri = "${module.registry.repository_url}:${var.web_app_configs.ecr_docker_image_tag}"
