@@ -37,5 +37,5 @@ resource "aws_iam_policy_attachment" "ecr_pull_policy" {
 
 resource "aws_key_pair" "web_app" {
   key_name   = "web_app"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDUWNOeX/yYBKoDS5INW+k8u/F6orcaTMi/suxBORb8MLlRcDrSLLYK7Zphp9AwI5Ldr84Z36Iw+oGxMOXrx+Zx3XQalnbX2Y805VEygKm1QAd6LciPm5usKCJeGHtfbyqsM38BOoxfPOng/5ikIjW7lKL3bWdV66RoGT5HZZ6TwO5MZMzYvhcG9zxe4DwwpWNcs6ZwreB0BbGtQZGIWnPJaHmLMGHN6qhw3R9HEpujZvskm4mJv7u4Xk8ohnaPxqaC6+pPQ6SNdOXoG17mN5rtP9j68gzbhqzWeLSg699BjpXZL65yQPSJFesUbjDfBLBN1XFYupHbejsOm6pmXoW4QD/jrx8c9H7V/6aUX4RPAQO4YE3aq08aDfU/26UTJFTzsi8MFWQpqkTct/QnWUqsjw9ySiJDM7TrsIbl6Nm7W+mdTY0YAx+BEGyYcSIkyvW6ANOni8U8njIGqtk0wwatzhfD7jj7IlCoS0UydDMMoFUyWcf41kMZGkFxYhgtym8= svu@Sreelakshmi"
+  public_key = var.ssh_public_key
 }
