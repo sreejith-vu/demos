@@ -33,3 +33,6 @@ variable "ecr_url" {
 variable "ecr_region" {
 
 }
+variable "ssh_public_key" {
+
+}
