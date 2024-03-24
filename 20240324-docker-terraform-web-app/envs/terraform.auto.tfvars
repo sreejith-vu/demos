@@ -16,6 +16,7 @@ web_app_configs = {
   ami_id                      = "ami-05295b6e6c790593e" #AMLN2
   local_docker_image_with_tag = "my-nginx-image:latest"
   ecr_docker_image_tag        = "NEW"
+  ssh_public_key              = "<replace with you ssh public key>"
 
   ingress_rules = [
     {
